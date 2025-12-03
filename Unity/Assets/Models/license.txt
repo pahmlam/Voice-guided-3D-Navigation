@@ -1,0 +1,8 @@
+Model Information:
+* title:	Small Apartment (morning version)
+* source:	https://sketchfab.com/3d-models/small-apartment-morning-version-7f0add3fe6f5404c8c7dc2deb08781a8
+* author:	Katydid (https://sketchfab.com/Katydid.)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
