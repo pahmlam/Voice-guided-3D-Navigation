@@ -1,9 +1,3 @@
-Dưới đây là file `README.md` chuyên nghiệp bằng tiếng Anh, mô tả đầy đủ kiến trúc dự án, cách cài đặt và sử dụng dựa trên source code bạn đã cung cấp.
-
-Bạn có thể tạo một file tên là `README.md` trong thư mục gốc của dự án và dán nội dung này vào.
-
------
-
 # Voice-Guided 3D Navigation
 
 A voice-controlled 3D simulation where a user can command an agent to navigate a complex environment using natural language. This project integrates **Unity** for the 3D frontend and **Python (Vosk)** for offline speech recognition, communicating via **TCP Sockets**.
@@ -114,6 +108,7 @@ The system recognizes the following patterns:
 * Nguyễn Minh Huyền: Python-Unity connection, animation processing.
 ## 📜 License
 Distributed under the MIT License. See `LICENSE.txt` for more information.
+
 Copyright (c) 2025 Tran Trang Linh, Nguyen Minh Huyen, Pham Tung Lam
 
 
