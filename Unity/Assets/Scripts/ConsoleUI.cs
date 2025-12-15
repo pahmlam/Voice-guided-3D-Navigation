@@ -9,7 +9,7 @@ public class ConsoleUI : MonoBehaviour
     public bool captureUnityLogs = true;
 
     [Header("Layout")]
-    public Vector2 panelSize = new Vector2(420, 100);
+    public Vector2 panelSize = new Vector2(400, 100);
     public Vector2 panelOffset = new Vector2(20, -20);
     public int padding = 10;
 
