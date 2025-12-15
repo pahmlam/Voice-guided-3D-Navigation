@@ -9,8 +9,11 @@ public class SpeechClient : MonoBehaviour
     NetworkStream stream;
     byte[] buffer = new byte[1024];
 
-    // THÊM: Tham chiếu đến bộ xử lý lệnh
+    // Tham chiếu đến bộ xử lý lệnh
     public VoiceCommandProcessor commandProcessor;
+
+    // Tham chiếu UI để in text ra màn hình
+    public ConsoleUI consoleUI;
 
     void Start()
     {
@@ -19,10 +22,16 @@ public class SpeechClient : MonoBehaviour
             client = new TcpClient("127.0.0.1", 5000);
             stream = client.GetStream();
             Debug.Log("Connected to Python");
+
+        
+            consoleUI?.AddMessage("Connected to Python");
         }
         catch (Exception e)
         {
             Debug.LogError("Không kết nối được Python: " + e.Message);
+
+    
+            consoleUI?.AddMessage("Không kết nối được Python: " + e.Message);
         }
     }
 
@@ -38,7 +47,11 @@ public class SpeechClient : MonoBehaviour
 
             Debug.Log("Python>> " + message);
 
-            // THÊM: Gửi text sang bộ xử lý lệnh nếu không rỗng
+            // In text nhận được lên UI
+            if (!string.IsNullOrEmpty(message))
+                consoleUI?.AddMessage(message);
+
+            // Gửi text sang bộ xử lý lệnh nếu không rỗng
             if (!string.IsNullOrEmpty(message) && commandProcessor != null)
             {
                 commandProcessor.Process(message);
