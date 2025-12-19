@@ -25,3 +25,5 @@
 
 # Unity cache server / package manager
 Packages/com.unity.*/*.tgz
+
+venv/
